@@ -2,7 +2,8 @@
 
 IMAGES := $(patsubst %/Dockerfile,%,$(wildcard */Dockerfile))
 
-$(patsubst %,%-image,$(IMAGES)): %-image: %/Dockerfile
+$(patsubst %,%-image,$(IMAGES)): %-image: rm rmi %/Dockerfile
+	-docker rmi cehoffman/$*
 	docker build --rm --tag cehoffman/$* $(dir $<)
 
 $(patsubst %,%-start,$(IMAGES)): %-start: %/Dockerfile
