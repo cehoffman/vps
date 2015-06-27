@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
+FROM ubuntu:15.04
 MAINTAINER Chris Hoffman <cehoffman@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -23,7 +23,7 @@ RUN apt-get -qq update && apt-get -qqy dist-upgrade && apt-get clean
 RUN rm -rf /var/cache/apt/*
 
 # Install utility packages
-RUN apt-get -qqy install curl
+RUN apt-get -qqy install curl software-properties-common
 
 # Make sure the base srv directory exists
 RUN mkdir -p /srv
