@@ -5,7 +5,7 @@ RUN apt-get -qqy install openjdk-7-jre-headless libswt-gtk-3-jni
 RUN mkdir -p /root/.swt/lib/linux/x86_64
 RUN ln -sf /usr/lib/jni /root/.swt/lib/linux/x86_64
 
-RUN curl -L http://downloads.sourceforge.net/project/davmail/davmail/4.6.0/davmail-linux-x86_64-4.6.0-2331.tgz | tar -zxvf -
+RUN curl -L http://downloads.sourceforge.net/project/davmail/davmail/4.6.1/davmail-linux-x86_64-4.6.1-2343.tgz | tar -zxvf -
 RUN mv davmail-linux-x86_64* /srv/davmail
 RUN mkdir -p /srv/davmail/log
 
