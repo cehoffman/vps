@@ -1,13 +1,14 @@
 FROM cehoffman/base
 MAINTAINER Chris Hoffman <cehoffman@gmail.com>
 
-RUN apt-get install -qqy openssl nginx-light
+RUN add-apt-repository ppa:nginx/development
+RUN apt-get install -qqy openssl nginx-full
 
 # Copy nginx configuration
 ADD conf/ /etc/nginx/
 
 # Copy configuration for ceh domain
-ADD ceh/ /srv/ceh/
+ADD srv/ /srv
 
 EXPOSE 80
 EXPOSE 443

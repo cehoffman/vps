@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CEH Home Servers</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        min-height: 100vh;
+      } 
+
+      iframe {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1;
+        -webkit-flex: 1;
+        border: 0;
+      }
+
+      nav {
+        background-color: #333;
+      }
+
+      ul {
+        display: flex;
+        display: -webkit-flex;
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        flex: 1;
+        -webkit-flex: 1;
+        text-align: center;
+      }
+
+      a {
+        color: #eee;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <nav>
+    <ul>
+      <li><a href="//cp.ceh.im/" target="main">Movies</a></li>
+      <li><a href="//sb.ceh.im/sb/home/" target="main">Shows</a></li>
+      <li><a href="//nzb.ceh.im/sabnzbd/" target="main">Usenet</a></li>
+      <li><a href="//bt.ceh.im/transmission/web/" target="main">Torrent</a></li>
+      <li><a href="//plex.ceh.im/web/" target="main">Play</a></li>
+    </ul>
+  </nav>
+  <iframe name="main" src="https://nzb.ceh.im/sabnzbd/"></iframe>
+</html>

@@ -1,1 +1,9 @@
-/ceh/ssl.key
+/srv/ceh/ssl.key
+/srv/couchpotato/ssl.key
+/srv/plex/ssl.key
+/srv/sabnzbd/ssl.key
+/srv/sickbeard/ssl.key
+/srv/transmission/ssl.key
+/srv/zway/ssl.key
+/srv/spmf/htpasswd
+/srv/ceh/htpasswd
