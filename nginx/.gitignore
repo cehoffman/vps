@@ -6,3 +6,4 @@
 /srv/transmission/ssl.key
 /srv/zway/ssl.key
 /srv/spmf/htpasswd
+/srv/ceh/dh.pem
